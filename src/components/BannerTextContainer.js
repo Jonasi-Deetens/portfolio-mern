@@ -9,7 +9,7 @@ const BannerTextContainer = () => {
         <br />
         <p>A portfolio item where I keep track of all my courses I followed and the experienced I gathered from all these.</p>
         <br />
-        <i className='text-green-400'>"Education is not the learning of facts, but the training of the mind to think." - Albert Einstein</i>
+        <i className='text-blue-600'>"Education is not the learning of facts, but the training of the mind to think." - Albert Einstein</i>
     </div>
   )
 }

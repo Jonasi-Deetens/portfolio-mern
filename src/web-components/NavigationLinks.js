@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 const NavigationLinks = () => {
     const pathName = useLocation().pathname;
     const [activeLink, setActiveLink] = useState('home');
-    const activeClass = 'bg-green-500 p-2 mx-2 text-black rounded-lg'
+    const activeClass = 'bg-blue-600 p-2 mx-2 text-black rounded-lg'
 
     useEffect(() => {
       switch (pathName) {
@@ -25,13 +25,13 @@ const NavigationLinks = () => {
 
     return (
         <div className='flex justify-center'>
-            <li className={activeLink === "home" ? activeClass : "hover:bg-green-500 hover:text-black mx-2 rounded-lg p-2"} >
+            <li className={activeLink === "home" ? activeClass : "hover:bg-blue-600 hover:text-black mx-2 rounded-lg p-2"} >
                 <Link onClick={() => setActiveLink('home')} to="/">Home</Link>
             </li>
-            <li className={activeLink === "track" ? activeClass : "hover:bg-green-500 hover:text-black mx-2 rounded-lg p-2"}>
+            <li className={activeLink === "track" ? activeClass : "hover:bg-blue-600 hover:text-black mx-2 rounded-lg p-2"}>
                 <Link onClick={() => setActiveLink('track')} to="/track">Track</Link>
             </li>
-            <li className={activeLink === "about" ? activeClass : "hover:bg-green-500 hover:text-black mx-2 rounded-lg p-2"}>
+            <li className={activeLink === "about" ? activeClass : "hover:bg-blue-600 hover:text-black mx-2 rounded-lg p-2"}>
                 <Link onClick={() => setActiveLink('about')} to="/about">About</Link>
             </li>
         </div>
