@@ -1,0 +1,25 @@
+//Flexbox example
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+//Grid example
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    background-color: #f0f0f0;
+}

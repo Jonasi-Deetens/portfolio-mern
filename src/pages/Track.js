@@ -1,18 +1,18 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import PageTitle from '../components/PageTitle'
 import { TrackContext } from '../providers/TrackProvider'
 import TrackComponent from '../components/TrackComponent'
 
 const Track = () => {
-  const tracks = useContext(TrackContext)
+  const trackContext = useContext(TrackContext);
 
   return (
     <main className='mt-16 bg-track'>
         <PageTitle title='My track' color='bg-gray-100' />
         <div className='w-10/12 p-20 m-auto'>
-        { tracks.map((track) => (
-          <TrackComponent track={track} />
-        )) }
+            { trackContext.tracks.map((track) => (
+            <TrackComponent track={track} />
+            )) }
         </div>
     </main>
   )

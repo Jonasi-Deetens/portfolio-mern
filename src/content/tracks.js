@@ -4,6 +4,7 @@ import javascript from '../assets/javascript.svg';
 import react from '../assets/react.svg';
 import nodejs from '../assets/nodejs.svg';
 import laravel from '../assets/laravel.svg';
+import {htmlBasics, htmlSemantics, htmlForm, htmlAccessibility, cssBasics, cssLayouts} from '../files'
 
 const tracks = [
     {
@@ -19,19 +20,23 @@ const tracks = [
                         subItems: [
                             {
                                 title: "Basics",
-                                status: "1"
+                                completed: 1,
+                                filePath: htmlBasics
                             },
                             {
                                 title: "Semantic HTML",
-                                status: "1"
+                                completed: 1,
+                                filePath: htmlSemantics
                             },
                             {
                                 title: "Form & Validation",
-                                status: "1"
+                                completed: 1,
+                                filePath: htmlForm
                             },
                             {
                                 title: "Accessibility",
-                                status: "1"
+                                completed: 1,
+                                filePath: htmlAccessibility
                             },
                         ]
                     },
@@ -42,15 +47,23 @@ const tracks = [
                         subItems: [
                             {
                                 title: "Basics",
-                                status: "1"
+                                completed: 1,
+                                filePath: cssBasics
                             },
                             {
                                 title: "Layouts",
-                                status: "1"
+                                completed: 1,
+                                filePath: cssLayouts
                             },
                             {
                                 title: "Responsiveness",
-                                status: "1"
+                                completed: 1,
+                                filePath: "../files/htmlBasics.txt"
+                            },
+                            {
+                                title: "Preprocessors",
+                                completed: 0,
+                                filePath: "../files/htmlBasics.txt"
                             }
                         ]
                     }, 
@@ -61,7 +74,8 @@ const tracks = [
                         subItems: [
                             {
                                 title: "Basics",
-                                status: "1"
+                                completed: 1,
+                                filePath: "../files/htmlBasics.txt"
                             }
                         ]
                     }, 
@@ -72,7 +86,8 @@ const tracks = [
                         subItems: [
                             {
                                 title: "Basics",
-                                status: "1"
+                                completed: 1,
+                                filePath: "../files/htmlBasics.txt"
                             }
                         ]
                     },
@@ -88,7 +103,8 @@ const tracks = [
                         subItems: [
                             {
                                 title: "Basics",
-                                status: "1"
+                                completed: 1,
+                                filePath: "../files/htmlBasics.txt"
                             }
                         ]
                     }, 
@@ -99,7 +115,8 @@ const tracks = [
                         subItems: [
                             {
                                 title: "Basics",
-                                status: "1"
+                                completed: 1,
+                                filePath: "../files/htmlBasics.txt"
                             }
                         ]
                     }, 
