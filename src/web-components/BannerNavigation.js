@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from '../assets/logo-64.png'
+import logo from '../assets/logo-white-64.png'
 import NavigationLinks from './NavigationLinks'
 
-const Navigation = () => {
+const BannerNavigation = () => {
     return (
-        <nav className='flex justify-around items-center top-0 list-none m-auto bg-white border-b-1 drop-shadow-md border-black font-bold fixed w-full z-50'>
+        <nav className='flex justify-around items-center list-none m-auto bg-gray-100 bg-opacity-20 text-white font-bold fixed w-full z-50 scroll:bg-opacity-100'>
             <picture>
                 <img src={logo} alt="company logo" />
             </picture>
@@ -14,4 +14,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation
+export default BannerNavigation

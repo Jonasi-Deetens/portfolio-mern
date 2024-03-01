@@ -1,12 +1,14 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Navigation from './Navigation'
-import Home from '../pages/Home'
+import Navigation from './BannerNavigation'
+import BannerTextContainer from '../components/BannerTextContainer'
 
 const BannerHeader = () => {
   return (
-    <header>
+    <header className='h-svh'>
+      <div className='h-full bg-home-banner top-0 absolute w-full z-0'>
         <Navigation />
+        <BannerTextContainer />
+      </div>
     </header>
   )
 }
