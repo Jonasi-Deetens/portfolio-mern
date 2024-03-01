@@ -15,8 +15,8 @@ const TrackComponent = ({track}) => {
             <TrackCategory category={category} />
         ))}
         </section>
-        {tracksContext.selectedTrack && !itemsHidden
-        ? <CodeExample item={tracksContext.selectedTrack} />
+        {tracksContext.selectedItem && !itemsHidden
+        ? <CodeExample item={tracksContext.selectedItem} />
         : ''
         }
     </article>

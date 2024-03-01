@@ -4,7 +4,7 @@ import javascript from '../assets/javascript.svg';
 import react from '../assets/react.svg';
 import nodejs from '../assets/nodejs.svg';
 import laravel from '../assets/laravel.svg';
-import {htmlBasics, htmlSemantics, htmlForm, htmlAccessibility, cssBasics, cssLayouts} from '../files'
+import {htmlBasics, htmlSemantics, htmlForm, htmlAccessibility, cssBasics, cssLayouts, cssResponsiveness} from '../files'
 
 const tracks = [
     {
@@ -58,7 +58,7 @@ const tracks = [
                             {
                                 title: "Responsiveness",
                                 completed: 1,
-                                filePath: "../files/htmlBasics.txt"
+                                filePath: cssResponsiveness
                             },
                             {
                                 title: "Preprocessors",

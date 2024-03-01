@@ -4,10 +4,11 @@ import tracks from "../content/tracks"
 const TrackContext = React.createContext();
 
 const TrackProvider = ({children}) => {
-    const [selectedTrack, setSelectedTrack] = useState(null);
+    const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedCategory, setSelectedCategory] = useState(null);
 
     return (
-        <TrackContext.Provider value={{tracks, selectedTrack, setSelectedTrack}}>
+        <TrackContext.Provider value={{tracks, selectedItem, setSelectedItem, selectedCategory, setSelectedCategory}}>
             {children}
         </TrackContext.Provider>
     )

@@ -5,6 +5,7 @@ import htmlForm from './htmlForm.txt'
 import htmlAccessibility from './htmlAccessibility.txt'
 import cssBasics from './cssBasics.txt'
 import cssLayouts from './cssLayouts.txt'
+import cssResponsiveness from './cssResponsiveness.txt'
 
 const index = () => {
   return (
@@ -19,5 +20,6 @@ export {
     htmlForm,
     htmlAccessibility,
     cssBasics,
-    cssLayouts
+    cssLayouts,
+    cssResponsiveness
 }
