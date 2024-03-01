@@ -1,10 +1,9 @@
 import React from "react"
+import tracks from "../content/tracks"
 
 const TrackContext = React.createContext();
 
 const TrackProvider = ({children}) => {
-    const tracks = ["Track1", "Track2"];
-
     return (
         <TrackContext.Provider value={tracks}>
             {children}

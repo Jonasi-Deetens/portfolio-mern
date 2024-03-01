@@ -27,7 +27,7 @@ const About = () => {
           <section className='bg-blue-600 p-20'>
             <div className='w-10/12 m-auto'>
               <h2 className='text-2xl underline mb-5'>Why Choose Me?</h2>
-              <p className='font-bold'>Check my track to see if I've learned what you need, and/or if I am almost the right for you.</p>
+              <p className='font-bold'>Check my track to see if I've learned what you need, and/or if I am almost the right fit for you.</p>
               <br />
               <ul className='flex flex-col justify-center items-center'>
                   <li className='font-bold'>Github: <a className='text-white underline hover:text-black' href="https://github.com/Jonasi-Deetens/">Jonasi-Deetens</a></li>
