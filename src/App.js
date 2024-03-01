@@ -5,6 +5,7 @@ import BannerHeader from './web-components/BannerHeader.js';
 import Track from './pages/Track.js';
 import About from './pages/About.js';
 import Header from './web-components/Header.js';
+import Footer from './web-components/Footer.js';
 
 function App() {
   const pathName = useLocation().pathname;
@@ -17,6 +18,7 @@ function App() {
           <Route path="/track" element={<Track />} />
           <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
