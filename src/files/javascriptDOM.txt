@@ -1,0 +1,52 @@
+// Example 1: Accessing Elements by ID
+const heading = document.getElementById('heading');
+console.log(heading.textContent); // Output: "Hello, World!"
+
+// Example 2: Accessing Elements by Class Name
+const paragraphs = document.getElementsByClassName('paragraph');
+for (let i = 0; i < paragraphs.length; i++) {
+    console.log(paragraphs[i].textContent);
+}
+
+// Example 3: Accessing Elements by Tag Name
+const listItems = document.getElementsByTagName('li');
+for (let i = 0; i < listItems.length; i++) {
+    console.log(listItems[i].textContent);
+}
+
+// Example 4: Query Selector
+const firstParagraph = document.querySelector('.paragraph');
+console.log(firstParagraph.textContent); // Output: "Lorem ipsum dolor sit amet."
+
+const allParagraphs = document.querySelectorAll('.paragraph');
+allParagraphs.forEach(paragraph => {
+    console.log(paragraph.textContent);
+});
+
+// Example 5: Modifying Element Content
+heading.textContent = "Welcome to DOM Manipulation!";
+firstParagraph.textContent = "This paragraph has been updated.";
+
+// Example 6: Modifying Element Styles
+heading.style.color = "blue";
+firstParagraph.style.fontSize = "18px";
+
+// Example 7: Creating New Elements
+const newParagraph = document.createElement('p');
+newParagraph.textContent = "This is a new paragraph.";
+document.body.appendChild(newParagraph);
+
+// Example 8: Removing Elements
+const listItemToRemove = document.getElementById('item2');
+listItemToRemove.remove();
+
+// Example 9: Adding Event Listeners
+const button = document.getElementById('button');
+button.addEventListener('click', () => {
+    alert('Button clicked!');
+});
+
+// Example 10: Changing Classes
+const elementWithClass = document.getElementById('elementWithClass');
+elementWithClass.classList.add('newClass');
+elementWithClass.classList.remove('oldClass');

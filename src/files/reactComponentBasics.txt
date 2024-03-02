@@ -1,0 +1,17 @@
+// Step 1: Import React
+import React from 'react';
+
+// Step 2: Define a functional component
+// A functional component is a JavaScript function that returns JSX
+function MyComponent() {
+    return (
+        <div>
+            <h1>Hello, React!</h1>
+            <p>This is my first React component.</p>
+        </div>
+    );
+}
+
+// Step 3: Export the component
+// Exporting allows other files to import and use this component
+export default MyComponent;

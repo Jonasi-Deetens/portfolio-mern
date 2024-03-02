@@ -1,0 +1,52 @@
+// The global namespace object in Node.js
+// Provides access to global variables and functions
+// Available throughout the application
+// In general, it's recommended to avoid adding properties directly to global
+global;
+
+// Provides information and control over the current Node.js process
+// Includes properties such as process.env, process.argv, etc.
+// Methods like process.exit() are used to terminate the process
+process;
+
+// Provides methods for logging and debugging
+// Includes console.log(), console.error(), console.warn(), etc.
+console;
+
+// Used to represent a fixed-length sequence of bytes
+// Provides methods for working with binary data
+Buffer;
+
+// Used to import modules in Node.js
+// Loads modules by their names or paths and returns the exported values
+require();
+
+// Represents the current module
+// Includes properties like module.exports and module.id
+module;
+
+// Special variable containing the current filename of the module being executed
+__filename;
+
+// Special variable containing the directory path of the module being executed
+__dirname;
+
+// Used to schedule the execution of code after a specified delay
+setTimeout();
+
+// Used to schedule the execution of code at regular intervals
+setInterval();
+
+// Used to cancel a scheduled timeout created by setTimeout()
+clearTimeout();
+
+// Used to cancel a scheduled interval created by setInterval()
+clearInterval();
+
+// Used for asynchronous operations
+// Represents a value that may be available now, in the future, or never
+Promise;
+
+// Introduced in ES11 (ECMAScript 2020)
+// A global object that provides a consistent way to access the global object in any environment
+globalThis;

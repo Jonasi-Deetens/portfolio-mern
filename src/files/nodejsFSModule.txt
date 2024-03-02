@@ -1,0 +1,115 @@
+const fs = require('fs');
+
+///Using Sync
+
+// Example 1: Read File Synchronously
+// Read the contents of a file synchronously
+try {
+    const data = fs.readFileSync('example.txt', 'utf8');
+    console.log('File Contents (Sync):', data);
+} catch (error) {
+    console.error('Error reading file:', error);
+}
+
+// Example 2: Write to File Synchronously
+// Write data to a file synchronously
+try {
+    fs.writeFileSync('example-output.txt', 'Hello, world!', 'utf8');
+    console.log('Data written to file successfully (Sync)');
+} catch (error) {
+    console.error('Error writing to file:', error);
+}
+
+// Example 3: Append to File Synchronously
+// Append data to a file synchronously
+try {
+    fs.appendFileSync('example-output.txt', '\nNew line appended!', 'utf8');
+    console.log('Data appended to file successfully (Sync)');
+} catch (error) {
+    console.error('Error appending to file:', error);
+}
+
+// Example 4: Delete File Synchronously
+// Delete a file synchronously
+try {
+    fs.unlinkSync('example-output.txt');
+    console.log('File deleted successfully (Sync)');
+} catch (error) {
+    console.error('Error deleting file:', error);
+}
+
+///Using ASync
+
+/ Example 1: Read File Asynchronously
+// Read the contents of a file asynchronously
+fs.readFile('example.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.error('Error reading file:', err);
+        return;
+    }
+    console.log('File Contents (Async):', data);
+});
+
+// Example 2: Write to File Asynchronously
+// Write data to a file asynchronously
+fs.writeFile('example-output.txt', 'Hello, world!', 'utf8', (err) => {
+    if (err) {
+        console.error('Error writing to file:', err);
+        return;
+    }
+    console.log('Data written to file successfully (Async)');
+});
+
+// Example 3: Append to File Asynchronously
+// Append data to a file asynchronously
+fs.appendFile('example-output.txt', '\nNew line appended!', 'utf8', (err) => {
+    if (err) {
+        console.error('Error appending to file:', err);
+        return;
+    }
+    console.log('Data appended to file successfully (Async)');
+});
+
+// Example 4: Delete File Asynchronously
+// Delete a file asynchronously
+fs.unlink('example-output.txt', (err) => {
+    if (err) {
+        console.error('Error deleting file:', err);
+        return;
+    }
+    console.log('File deleted successfully (Async)');
+});
+
+
+-----------------------------------------------------------------
+
+
+// Synchronous operation example
+// Synchronous operations block the execution of the program until they complete
+// The program waits for each operation to finish before moving on to the next one
+
+// Synchronous file read operation
+const data = fs.readFileSync('example.txt', 'utf8');
+console.log('File Contents (Sync):', data);
+// The program waits for the file read operation to complete before proceeding to the next line
+
+// Asynchronous operation example
+// Asynchronous operations do not block the execution of the program
+// The program continues to execute while waiting for operations to complete
+
+// Asynchronous file read operation
+fs.readFile('example.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.error('Error reading file:', err);
+        return;
+    }
+    console.log('File Contents (Async):', data);
+});
+// The program continues to execute without waiting for the file read operation to complete
+// Once the file read operation finishes, the callback function is called to handle the result
+
+// Further explanation
+// Synchronous operations are easier to understand and reason about as they execute sequentially
+// However, they can lead to poor performance and scalability, especially in applications with high concurrency
+// Asynchronous operations are more efficient and scalable, especially for I/O-bound tasks
+// They allow the program to continue executing other tasks while waiting for I/O operations to complete

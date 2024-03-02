@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const CodeExample = ({item}) => {
+const CodeExample = ({category, item}) => {
   const [codeContent, setCodeContent] = useState('');
 
   useEffect(() => {
@@ -19,9 +19,9 @@ const CodeExample = ({item}) => {
 
   return (
     <section className='bg-white m-2 border border-black'>
-      <h3 className='p-2 text-xl font-bold underline'>Code example: {item.title}</h3>
-      <code>
-        <pre className='text-left p-10'>{codeContent}</pre>
+      <h3 className='p-2 text-xl font-bold underline'>Code example: {category.title} - {item.title}</h3>
+      <code className='max-w-full'>
+        <pre className='text-left p-10 text-wrap'>{codeContent}</pre>
       </code>
     </section>
   )

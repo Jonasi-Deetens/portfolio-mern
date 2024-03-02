@@ -1,0 +1,55 @@
+// Example 1: Creating a Promise
+const myPromise = new Promise((resolve, reject) => {
+  // Simulating an asynchronous operation (e.g., fetching data from an API)
+  setTimeout(() => {
+    const randomNum = Math.random();
+    if (randomNum >= 0.5) {
+      resolve(`Promise resolved with random number: ${randomNum}`);
+    } else {
+      reject(new Error(`Promise rejected with random number: ${randomNum}`));
+    }
+  }, 2000);
+});
+
+// Example 2: Consuming the Promise
+myPromise
+  .then((data) => {
+    console.log('Example 2 - Promise resolved:', data);
+  })
+  .catch((error) => {
+    console.error('Example 2 - Promise rejected:', error);
+  });
+
+// Example 3: Chaining Promises
+const anotherPromise = new Promise((resolve) => {
+  resolve('Another promise resolved!');
+});
+
+anotherPromise
+  .then((data) => {
+    console.log('Example 3 - Chained promise:', data);
+    return 'Third promise resolved!';
+  })
+  .then((data) => {
+    console.log('Example 3 - Third promise:', data);
+    throw new Error('Chained promise rejected!');
+  })
+  .catch((error) => {
+    console.error('Example 3 - Chained promise rejected:', error);
+  });
+
+// Example 4: Handling Multiple Promises
+const promise1 = Promise.resolve('Promise 1 resolved!');
+const promise2 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve('Promise 2 resolved!');
+  }, 3000);
+});
+
+Promise.all([promise1, promise2])
+  .then((values) => {
+    console.log('Example 4 - All promises resolved:', values);
+  })
+  .catch((error) => {
+    console.error('Example 4 - One or more promises rejected:', error);
+  });

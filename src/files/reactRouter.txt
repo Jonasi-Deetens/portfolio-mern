@@ -1,0 +1,54 @@
+// Step 1: Install React Router
+// Run the following command in your terminal:
+// npm install react-router-dom
+
+// Step 2: Import React and the required modules
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+// Step 3: Create components for different pages
+function Home() {
+    return <h2>Home Page</h2>;
+}
+
+function About() {
+    return <h2>About Page</h2>;
+}
+
+function Contact() {
+    return <h2>Contact Page</h2>;
+}
+
+// Step 4: Create a navigation menu
+function Navigation() {
+    return (
+        <nav>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
+                </li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
+            </ul>
+        </nav>
+    );
+}
+
+// Step 5: Create a component to define routes
+function App() {
+    return (
+        <Router>
+            <div>
+                <Navigation />
+                <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+            </div>
+        </Router>
+    );
+}

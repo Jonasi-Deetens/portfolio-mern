@@ -1,0 +1,65 @@
+// Example 1: Hello, World!
+console.log("Hello, World!");
+
+// Example 2: Variables and Data Types
+let name = "John";
+let age = 30;
+const PI = 3.14;
+let isStudent = true;
+let fruits = ['apple', 'banana', 'orange'];
+
+// Example 3: Operators
+let a = 10;
+let b = 5;
+let sum = a + b;
+let difference = a - b;
+let product = a * b;
+let quotient = a / b;
+
+// Example 4: Conditional Statements (if/else)
+if (age >= 18) {
+    console.log(name + " is an adult.");
+} else {
+    console.log(name + " is a minor.");
+}
+
+// Example 5: Loops (for, while)
+console.log("Fruits:");
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+let count = 0;
+while (count < 3) {
+    console.log("Count: " + count);
+    count++;
+}
+
+// Example 6: Functions
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greet("Alice");
+
+// Example 7: Objects
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    hobbies: ['reading', 'gaming'],
+    greet: function() {
+        console.log("Hello, I'm " + this.firstName + " " + this.lastName + ".");
+    }
+};
+
+console.log(person.firstName);
+console.log(person.hobbies);
+person.greet();
+
+// Javascript ES 6: arrow Functions
+const multiply = (a, b) => {
+    return a * b;
+}
+
+console.log(multiply(11, 2));

@@ -1,0 +1,22 @@
+const path = require('path');
+
+// Get the directory name of a path
+console.log('Directory Name:', path.dirname('/path/to/file.txt'));
+
+// Get the basename of a path (last portion of a path)
+console.log('Basename:', path.basename('/path/to/file.txt'));
+
+// Get the extension of a file
+console.log('Extension:', path.extname('/path/to/file.txt'));
+
+// Join multiple path segments together
+console.log('Joined Path:', path.join('/path', 'to', 'file.txt'));
+
+// Resolve a sequence of paths or path segments into an absolute path
+console.log('Resolved Path:', path.resolve('path', 'to', 'file.txt'));
+
+// Normalize a path (removes any redundant elements)
+console.log('Normalized Path:', path.normalize('/path/to/../file.txt'));
+
+// Get the relative path from one path to another
+console.log('Relative Path:', path.relative('/path/to', '/path/to/file.txt'));

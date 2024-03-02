@@ -4,7 +4,8 @@ import javascript from '../assets/javascript.svg';
 import react from '../assets/react.svg';
 import nodejs from '../assets/nodejs.svg';
 import laravel from '../assets/laravel.svg';
-import {htmlBasics, htmlSemantics, htmlForm, htmlAccessibility, cssBasics, cssLayouts, cssResponsiveness} from '../files'
+import {htmlBasics, htmlSemantics, htmlForm, htmlAccessibility, cssBasics, cssLayouts, cssResponsiveness, javascriptBasics, 
+    javascriptDOM, javascriptFetch, reactComponentBasics, reactPassingProps, reactUseRef, reactHooks, reactRouter, reactContext, nodejsGlobals, nodejsModules, nodejsOSModule, nodejsPathModule, nodejsFSModule, nodejsHttpModule, nodejsNpm, javascriptPromise} from '../files'
 
 const tracks = [
     {
@@ -63,7 +64,7 @@ const tracks = [
                             {
                                 title: "Preprocessors",
                                 completed: 0,
-                                filePath: "../files/htmlBasics.txt"
+                                filePath: ""
                             }
                         ]
                     }, 
@@ -75,7 +76,22 @@ const tracks = [
                             {
                                 title: "Basics",
                                 completed: 1,
-                                filePath: "../files/htmlBasics.txt"
+                                filePath: javascriptBasics
+                            },
+                            {
+                                title: "DOM Manipulation",
+                                completed: 1,
+                                filePath: javascriptDOM
+                            },
+                            {
+                                title: "Fetch/API",
+                                completed: 1,
+                                filePath: javascriptFetch
+                            },
+                            {
+                                title: "Promise",
+                                completed: 1,
+                                filePath: javascriptPromise
                             }
                         ]
                     }, 
@@ -85,9 +101,34 @@ const tracks = [
                         iconAlt: "logo of react",
                         subItems: [
                             {
-                                title: "Basics",
+                                title: "Basics Components",
                                 completed: 1,
-                                filePath: "../files/htmlBasics.txt"
+                                filePath: reactComponentBasics
+                            },
+                            {
+                                title: "Passing Props",
+                                completed: 1,
+                                filePath: reactPassingProps
+                            },
+                            {
+                                title: "useRef",
+                                completed: 1,
+                                filePath: reactUseRef
+                            },
+                            {
+                                title: "useState & useEffect",
+                                completed: 1,
+                                filePath: reactHooks
+                            },
+                            {
+                                title: "Router",
+                                completed: 1,
+                                filePath: reactRouter
+                            },
+                            {
+                                title: "useContext",
+                                completed: 1,
+                                filePath: reactContext
                             }
                         ]
                     },
@@ -102,9 +143,39 @@ const tracks = [
                         iconAlt: "logo of node.js with text above",
                         subItems: [
                             {
-                                title: "Basics",
+                                title: "Globals",
                                 completed: 1,
-                                filePath: "../files/htmlBasics.txt"
+                                filePath: nodejsGlobals
+                            },
+                            {
+                                title: "Modules",
+                                completed: 1,
+                                filePath: nodejsModules
+                            },
+                            {
+                                title: "OS Module",
+                                completed: 1,
+                                filePath: nodejsOSModule
+                            },
+                            {
+                                title: "Path Module",
+                                completed: 1,
+                                filePath: nodejsPathModule
+                            },
+                            {
+                                title: "FS Module",
+                                completed: 1,
+                                filePath: nodejsFSModule
+                            },
+                            {
+                                title: "Http Module - Basic",
+                                completed: 1,
+                                filePath: nodejsHttpModule
+                            },
+                            {
+                                title: "Npm",
+                                completed: 1,
+                                filePath: nodejsNpm
                             }
                         ]
                     }, 

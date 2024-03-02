@@ -1,0 +1,41 @@
+// Step 1 : Create a file named myModule.js
+
+// Define a function to export
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+// Export the function
+module.exports = greet;
+
+// Step 2 : Require the module into app.js
+
+const greet = require('./myModule');
+
+// Use the exported function
+greet('John');
+
+// Step 3 : Run following command in the cli
+node app.js
+
+
+----------------------------------------
+
+// USING ES 6
+
+// Step 1: Define a function to export
+const greet = (name) => {
+    console.log(`Hello, ${name}!`);
+};
+
+// Export the function
+export default greet;
+
+// Step 2: Import the default export from the module
+import greet from './myModule';
+
+// Use the imported function
+greet('John');
+
+// Step 3 : Run following command in the cli
+node app.js
