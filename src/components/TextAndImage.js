@@ -3,7 +3,7 @@ import React from 'react'
 const TextAndImage = ({text, src, alt}) => {
   return (
     <div className='w-full lg:min-h-96 flex flex-col lg:flex-row'>
-        <div className='w-full lg:w-1/2 p-10 flex justify-center items-center lg:min-h-96 font-bold bg-track bg-blue-600'>
+        <div className='w-full lg:w-1/2 p-10 flex justify-center items-center lg:min-h-96 font-bold bg-track'>
             <p>{text}</p>
         </div>
         <picture className='w-full lg:w-1/2 hidden lg:flex justify-center items-center'>

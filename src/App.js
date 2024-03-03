@@ -4,6 +4,7 @@ import Home from './pages/Home.js';
 import BannerHeader from './web-components/BannerHeader.js';
 import Track from './pages/Track.js';
 import About from './pages/About.js';
+import CV from './pages/Cv.js';
 import Header from './web-components/Header.js';
 import Footer from './web-components/Footer.js';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/track" element={<Track />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cv" element={<CV />} />
       </Routes>
       <Footer />
     </div>

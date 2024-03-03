@@ -5,10 +5,10 @@ const TrackContext = React.createContext();
 
 const TrackProvider = ({children}) => {
     const [selectedItem, setSelectedItem] = useState(null);
-    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [selectedTrack, setSelectedTrack] = useState(null);
 
     return (
-        <TrackContext.Provider value={{tracks, selectedItem, setSelectedItem, selectedCategory, setSelectedCategory}}>
+        <TrackContext.Provider value={{tracks, selectedItem, setSelectedItem, selectedTrack, setSelectedTrack}}>
             {children}
         </TrackContext.Provider>
     )

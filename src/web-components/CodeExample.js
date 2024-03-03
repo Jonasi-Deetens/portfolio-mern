@@ -18,10 +18,10 @@ const CodeExample = ({category, item}) => {
   }, [item.filePath]);
 
   return (
-    <section className='bg-white m-2 border border-black'>
-      <h3 className='p-2 text-xl font-bold underline'>Code example: {category.title} - {item.title}</h3>
+    <section className='bg-white w-fit m-auto border border-black'>
+      <h3 className='p-2 text-xl font-bold underline'>Code example: {category} - {item.title}</h3>
       <code className='max-w-full'>
-        <pre className='text-left p-10 text-wrap'>{codeContent}</pre>
+        <pre className='p-10 text-left text-wrap'>{codeContent}</pre>
       </code>
     </section>
   )
