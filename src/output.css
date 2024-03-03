@@ -714,6 +714,10 @@ video {
   justify-content: space-around;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .text-wrap {
   text-wrap: wrap;
 }
@@ -1017,6 +1021,10 @@ code {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:text-lg {

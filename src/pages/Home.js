@@ -6,7 +6,7 @@ import ImageAndText from '../components/ImageAndText'
 
 const Home = () => {
   return (
-    <main className='w-10/12 bg-white m-auto text-left'>
+    <main className='w-11/12 lg:w-10/12 bg-white m-auto text-left'>
       <section className='p-10'>
         <h2 className='font-bold text-2xl text-center border-b-2 p-5'>Welcome to my course tracker.</h2>
         <br />

@@ -11,7 +11,7 @@ const Track = () => {
   return (
     <main className='mt-16 bg-track'>
         <PageTitle title='My track' color='bg-gray-100' />
-        <div className='p-10'>
+        <div className='p-2 lg:p-10'>
           <TrackList />
           {trackContext.selectedTrack ? 
             <section className='flex flex-col items-between m-auto'>
