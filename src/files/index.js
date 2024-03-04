@@ -23,6 +23,7 @@ import nodejsPathModule from './nodejsPathModule.txt'
 import nodejsFSModule from './nodejsFSModule.txt'
 import nodejsHttpModule from './nodejsHttpModule.txt'
 import nodejsNpm from './nodejsNpm.txt'
+import nodejsStreams from './nodejsStreams.txt'
 
 const index = () => {
   return (
@@ -55,5 +56,6 @@ export {
     nodejsPathModule,
     nodejsFSModule,
     nodejsHttpModule,
-    nodejsNpm
+    nodejsNpm,
+    nodejsStreams
 }

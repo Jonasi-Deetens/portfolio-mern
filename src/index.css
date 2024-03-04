@@ -21,7 +21,21 @@ code {
 }
 
 .bg-home-banner {
-  background-image: url('./assets/home-banner.png');
+  background-image: url('./assets/home-banner.webp');
   background-size: cover;
   background-attachment: fixed;
+  background-position: bottom;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px black;
+}
+
+.text-shadow-white {
+  text-shadow: 1px 1px 1px white;
+}
+
+@media (max-width: 1024px) {
+  .bg-home-banner {
+  }
 }

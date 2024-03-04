@@ -5,7 +5,7 @@ import react from '../assets/react.svg';
 import nodejs from '../assets/nodejs.svg';
 import laravel from '../assets/laravel.svg';
 import {htmlBasics, htmlSemantics, htmlForm, htmlAccessibility, cssBasics, cssLayouts, cssResponsiveness, javascriptBasics, 
-    javascriptDOM, javascriptFetch, reactComponentBasics, reactPassingProps, reactUseRef, reactHooks, reactRouter, reactContext, nodejsGlobals, nodejsModules, nodejsOSModule, nodejsPathModule, nodejsFSModule, nodejsHttpModule, nodejsNpm, javascriptPromise} from '../files'
+    javascriptDOM, javascriptFetch, reactComponentBasics, reactPassingProps, reactUseRef, reactHooks, reactRouter, reactContext, nodejsGlobals, nodejsModules, nodejsOSModule, nodejsPathModule, nodejsFSModule, nodejsHttpModule, nodejsNpm, javascriptPromise, nodejsStreams} from '../files'
 
 const tracks = [
     {
@@ -166,6 +166,11 @@ const tracks = [
                 title: "Http Module - Basic",
                 completed: 1,
                 filePath: nodejsHttpModule
+            },
+            {
+                title: "Streams",
+                completed: 1,
+                filePath: nodejsStreams
             },
             {
                 title: "Npm",

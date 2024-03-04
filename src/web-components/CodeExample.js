@@ -18,7 +18,7 @@ const CodeExample = ({category, item}) => {
   }, [item.filePath]);
 
   return (
-    <section className='bg-white max-w-full w-fit m-auto border border-black'>
+    <section className='bg-white max-w-full w-fit m-auto shadow-inner border shadow-blue-500'>
       <h3 className='p-10 text-xl font-bold underline'>Code example: {category} - {item.title}</h3>
       <code className='max-w-full'>
         <pre className='p-10 text-left text-wrap overflow-x-auto'>{codeContent}</pre>

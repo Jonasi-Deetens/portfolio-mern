@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import PageTitle from '../components/PageTitle'
+import React from 'react'
 import TextAndImage from '../components/TextAndImage'
 import homeContent from '../content/homeContent'
 import ImageAndText from '../components/ImageAndText'

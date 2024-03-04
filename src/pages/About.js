@@ -1,22 +1,22 @@
 import React from 'react'
 import PageTitle from '../components/PageTitle'
 import me from '../assets/me.jpg'
-import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
     <main className='mt-16'>
       <PageTitle title="About" color='bg-gray-100' />
-      <div className='w-full lg:w-10/12 m-auto p-10'>
-        <div className='text-center m-auto'>
+      <div className='w-full md:w-9/12 lg:w-6/12 m-auto p-5'>
+        <div className='m-auto'>
           <section className='p-5 m-auto'>
               <h2 className='text-2xl underline mb-10'>Full Stack Developer: Junior</h2>
               <figure className='mb-5'>
                 <img className='bg-white p-2 border drop-shadow-sm m-auto h-w-full' width={128} src={me} alt="profile picture of the creator of the website" />
               </figure>
-              <p>
+              <p className='text-left'>
                 I see myself as someone who is highly motivated and deeply committed to achieving excellence in everything I do.
                 I have a natural inclination to strive for perfection, always seeking ways to enhance my abilities and refine my skills.
+                <br />
                 <br />
                 I thrive on challenges because they provide me with opportunities to push my limits and grow both personally and professionally.
               </p>

@@ -1,7 +1,7 @@
-import record from '../assets/record.png'
-import summarize from '../assets/summarize.png'
-import goals from '../assets/goals.png'
-import display from '../assets/display.png'
+import record from '../assets/record.webp'
+import summarize from '../assets/summarize.webp'
+import goals from '../assets/goals.webp'
+import display from '../assets/display.webp'
 
 
 const homeContent = [

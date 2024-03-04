@@ -19,3 +19,29 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
+-----------------------------------------
+
+//Using writehead and write to send back data
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  // Set response headers and status code using writeHead
+  res.writeHead(200, {
+    'Content-Type': 'text/plain',
+    'Cache-Control': 'no-cache'
+  });
+
+  // Write content to the response
+  res.write('Hello World!\n');
+  res.write('This is an example of using writeHead with write.\n');
+
+  // End the response
+  res.end();
+});
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
