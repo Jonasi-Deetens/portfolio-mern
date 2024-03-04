@@ -19,8 +19,8 @@ const Home = () => {
         {homeContent.map((content, index) => (
           <div key={`section-${index}`}>
           {(index % 2) === 0 ? 
-              <TextAndImage text={content.text} src={content.src} alt={content.alt} /> :
-              <ImageAndText text={content.text} src={content.src} alt={content.alt} />
+            <TextAndImage text={content.text} src={content.src} alt={content.alt} /> :
+            <ImageAndText text={content.text} src={content.src} alt={content.alt} />
           }
       </div>
         ))}

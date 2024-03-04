@@ -16,7 +16,7 @@ const Track = () => {
           <TrackList />
           <hr className={trackContext.selectedTrack ? 'block mb-10 border-white' : 'hidden'} />
           {trackContext.selectedTrack ? 
-            <section className='flex flex-col items-between m-auto'>
+            <section className='flex flex-col items-between m-auto mb-10'>
               <h3 className='font-bold text-xl mb-10 bg-blue-500 text-white p-2 drop-shadow-md w-fit m-auto rounded-lg'>{trackContext.selectedTrack.title}</h3>
               <div className='mb-10'>
                 {trackContext.selectedTrack && trackContext.selectedTrack.subItems.map((subitem, index) => (
