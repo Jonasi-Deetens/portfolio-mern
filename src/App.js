@@ -7,9 +7,13 @@ import About from './pages/About.js';
 import CV from './pages/Cv.js';
 import Header from './web-components/Header.js';
 import Footer from './web-components/Footer.js';
+import { useEffect } from 'react';
 
 function App() {
   const pathName = useLocation().pathname;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="App">

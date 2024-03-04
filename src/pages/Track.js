@@ -8,6 +8,9 @@ import projects from '../content/projects'
 
 const Track = () => {
   const trackContext = useContext(TrackContext);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className='mt-16 bg-blue-100 bg-opacity-65'>

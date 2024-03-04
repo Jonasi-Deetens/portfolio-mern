@@ -5,7 +5,6 @@ import NavigationLinks from './NavigationLinks'
 const BannerNavigation = () => {
     const [isTransparent, setIsTransparent] = useState(1);
 
-
     useEffect(() => {
         const handleScroll = () => {
             let scrollPosition = window.scrollY;

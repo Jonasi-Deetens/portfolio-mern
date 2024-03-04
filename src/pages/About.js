@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PageTitle from '../components/PageTitle'
 import me from '../assets/me.jpg'
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className='mt-16'>
       <PageTitle title="About" color='bg-gray-100' />

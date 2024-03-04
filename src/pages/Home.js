@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TextAndImage from '../components/TextAndImage'
 import homeContent from '../content/homeContent'
 import ImageAndText from '../components/ImageAndText'
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <main className='w-11/12 lg:w-10/12 bg-white m-auto text-left'>
       <section className='p-10'>
